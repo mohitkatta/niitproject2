@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div class="container">
+  <div ng-repeat="x in pendingrequests">
+  {{x.fromuser.user_mailaddress}}<br>
+  {{x.fromuser.user_name}}<br>
+  {{x.fromuser.user_phonenumber}}<br>
+  <button type="button" class="btn btn-primary active" ng-click="accept_request(x,'A')">Accept request</button>
+  <button type="button" class="btn btn-primary" ng-click="accept_request(x,'R')">Delete request</button>
+  </div>
+</div>
+
+</body>
+</html>

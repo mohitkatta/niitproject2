@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body ng-app="myApp">
+<nav class="navbar navbar-inverse ">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#/">Socialmedia</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#/">Home</a></li>
+      <li><a href="#/admin">admin</a></li>
+      <li><a href="#/user">user</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">friend
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#/suggestedfriends">suggested friends</a></li>
+          <li><a href="#/pendingrequests">pending friend requests</a></li>
+          <li><a href="#/friends">friends</a></li>
+    </ul>
+    </li>
+    </ul>
+    
+    
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#/signin"><span class="glyphicon glyphicon-log-in"></span>signin</a></li>
+      <li ><a href="" ng-click="logout()" ng-controller="userCtrl"><span class="glyphicon glyphicon-user"></span>signout</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<div ng-view></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="controller/usercontroller.js"></script>
+<script type="text/javascript" src="controller/userservice.js"></script>
+<script src="controller/friendcontroller.js"></script>
+<script type="text/javascript" src="controller/friendservice.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="container">
+  <div ng-repeat="x in friendslist">
+  {{x.user_mailaddress}}<br>
+  {{x.user_name}}<br>
+  {{x.user_phonenumber}}<br>
+  <a href="#/chat"><button type="button" class="btn btn-primary active">Chat</button></a>
+  </div>
+</div>
+</body>
+</html>

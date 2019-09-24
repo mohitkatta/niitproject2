@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+<div class="container">
+  
+  <div ng-repeat="x in suggestedfriends">
+  {{x[0]}}<br>
+  {{x[2]}}<br>
+  {{x[4]}}<br>
+   <button type="button" class="btn btn-primary active"  ng-click="send_request(x[0])">Send request</button>
+  </div>
+</div>
+
+</body>
+</html>
